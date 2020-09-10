@@ -1,0 +1,34 @@
+.About {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+    margin-bottom: 10rem;
+
+    .Content {
+        padding: 2rem;
+        text-align: left;
+        h2 {
+            span { color: #D01132}
+            font-size: 36px;
+            font-weight: 700;
+        }
+        p {
+            line-height: 177%;
+            font-size: 18px;
+            font-weight: 400;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .Image {
+        width: 550px;
+        image {
+            width: 100%;
+        }
+    }
+}
