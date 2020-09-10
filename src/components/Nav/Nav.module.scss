@@ -1,0 +1,39 @@
+.NavContainer {
+    border-bottom: 1px solid rgba(73, 73, 73, 0.459);
+    .Nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 1rem 0;
+        .Logo {
+            text-align: left;
+            h2, h5 {
+                margin: 0;
+            }
+            h2 {
+                margin-bottom: 5px;
+            }
+        }
+        .NavItems {
+            list-style-type: none;
+            margin: 0;
+            li {
+                display: inline-block;
+                font-weight: 600;
+                a {
+                    display: block;
+                    margin: 0 1rem;
+                    text-decoration: none;
+                    color: inherit;
+    
+                }
+                .Active {
+                    color: #D01132;
+                }
+            }
+        }
+    }
+}
+
