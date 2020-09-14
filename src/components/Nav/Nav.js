@@ -11,10 +11,10 @@ const Nav = () => {
                     <h5>In the service of caring</h5>
                 </div>
                 <ul className={classes.NavItems}>
-                    <li><NavLink to="/" className={classes.Active}>Home</NavLink></li>
-                    <li><NavLink to="/about">About Us</NavLink></li>
-                    <li><NavLink to="/Donate">Donate</NavLink></li>
-                    <li><NavLink to="/Contact">Contact</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} exact to="/">Home</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} to="/about">About Us</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} to="/Donate">Donate</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} to="/Contact">Contact</NavLink></li>
                 </ul>
             </nav>
         </header>
