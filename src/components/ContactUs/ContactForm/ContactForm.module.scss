@@ -1,7 +1,11 @@
+@import '../../../assets/styles/mixins.scss';
 .ContactForm {
     max-width: 680px;
     width: 100%;
     margin: 0 auto;
+    @include media($bp-tablet) {
+        max-width: 500px;
+    }
     form {
         width: 100%;
         .FormGroup {

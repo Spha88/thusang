@@ -1,7 +1,15 @@
+@import '../../assets/styles/mixins.scss';
+
 .Help {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media($bp-tablet) {
+        margin-top: 0;
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+    }
     .Content {
         padding-right: 5rem;
         text-align: left;
@@ -24,9 +32,27 @@
             font-size: 24px;
             font-weight: 500;
         }
+        @include media($bp-laptop) {
+            width: 50%;
+            padding-right: 2rem;
+        }
+        @include media($bp-tablet) {
+            width: 100%;
+            padding: 0;
+            padding-bottom: 2rem;
+            text-align: center;
+        }
     }
     .Image {
         width: 550px;
-        height: auto;
+        @include media($bp-laptop) {
+            width: 50%;
+            img {
+                max-width: 100%;
+            }
+        }
+        @include media($bp-tablet) {
+            width: 100%;
+        }
     }
 }

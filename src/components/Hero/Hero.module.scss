@@ -1,15 +1,22 @@
+@import '../../assets/styles/mixins.scss';
+
 .Hero {
     height: 80vh;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     background-position: center center;
+    background-color: $theme-black;
     background-size: cover;
+    background-repeat: no-repeat !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media($bp-tablet) {
+        height: 60vh;
+    }
     .HeroContent {
         max-width: 1024px;
-        padding: 2rem;
+        padding: 4rem;
         color: #fff;
         text-align: left;
         h1 {

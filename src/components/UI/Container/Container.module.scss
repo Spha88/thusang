@@ -1,5 +1,15 @@
+@import '../../../assets/styles/mixins.scss';
+
 .Container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 3rem 1rem;
+    overflow-x: hidden;
+    padding: 3rem 2rem;
+    @include media($bp-laptop) {
+        max-width: 1000px;
+    }
+    @include media($bp-tablet) {
+        padding-bottom: 1rem;
+    }
 }

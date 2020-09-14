@@ -1,13 +1,23 @@
+@import '../../assets/styles/mixins.scss';
+
 .HowToHelp {
-    h2.Heading {
+    .Heading {
         font-size: 36px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 4rem;
+        @include media($bp-tablet) {
+            margin-bottom: 2rem;
+        }
     }
     .Content {
         display: flex;
         justify-content: space-between;
+        @include media($bp-tablet) {
+            display: block;
+            max-width: 500px;
+            margin: 0 auto;
+        }
         .Paragraph {
             max-width: 550px;
             text-align: left;

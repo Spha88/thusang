@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Footer.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -11,10 +12,10 @@ const Footer = () => {
                         <h5>In the service of caring</h5>
                     </div>
                     <ul className={classes.NavItems}>
-                        <li><a href="!#" className={classes.Active}>Home</a></li>
-                        <li><a href="!#">About Us</a></li>
-                        <li><a href="!#">Donate</a></li>
-                        <li><a href="!#">Contact</a></li>
+                        <li><NavLink to="/" exact activeClassName={classes.Active}>Home</NavLink></li>
+                        <li><NavLink to="/about" activeClassName={classes.Active}>About Us</NavLink></li>
+                        <li><NavLink to="/donate" activeClassName={classes.Active}>Donate</NavLink></li>
+                        <li><NavLink to="/contact-us" activeClassName={classes.Active}>Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className={classes.Signature}>

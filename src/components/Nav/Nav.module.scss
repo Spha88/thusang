@@ -1,12 +1,14 @@
 .NavContainer {
     border-bottom: 1px solid rgba(73, 73, 73, 0.459);
+    width: 100vw;
+    overflow-x: hidden;
     .Nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 1rem 0;
+        padding: 1rem;
         .Logo {
             text-align: left;
             h2, h5 {
