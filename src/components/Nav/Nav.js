@@ -14,7 +14,7 @@ const Nav = () => {
                     <li><NavLink activeClassName={classes.Active} exact to="/">Home</NavLink></li>
                     <li><NavLink activeClassName={classes.Active} to="/about">About Us</NavLink></li>
                     <li><NavLink activeClassName={classes.Active} to="/donate">Donate</NavLink></li>
-                    <li><NavLink activeClassName={classes.Active} to="/contact">Contact</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} to="/contact-us">Contact</NavLink></li>
                 </ul>
             </nav>
         </header>

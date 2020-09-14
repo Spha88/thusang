@@ -29,7 +29,6 @@ const Donate = () => {
                 <div className={classes.ContactForm}>
                     <h2>Contact us</h2>
                     <ContactForm />
-
                 </div>
             </Container>
         </div>
