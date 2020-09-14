@@ -1,0 +1,27 @@
+.HowToHelp {
+    h2.Heading {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .Content {
+        display: flex;
+        justify-content: space-between;
+        .Paragraph {
+            max-width: 550px;
+            text-align: left;
+            h2 {
+                font-weight: bold;
+                font-size: 18px;
+                span {
+                    color: #A30000
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 180%;
+            }
+        }
+    }
+}
