@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Nav.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
@@ -10,10 +11,10 @@ const Nav = () => {
                     <h5>In the service of caring</h5>
                 </div>
                 <ul className={classes.NavItems}>
-                    <li><a href="!#" className={classes.Active}>Home</a></li>
-                    <li><a href="!#">About Us</a></li>
-                    <li><a href="!#">Donate</a></li>
-                    <li><a href="!#">Contact</a></li>
+                    <li><NavLink to="/" className={classes.Active}>Home</NavLink></li>
+                    <li><NavLink to="/about">About Us</NavLink></li>
+                    <li><NavLink to="/Donate">Donate</NavLink></li>
+                    <li><NavLink to="/Contact">Contact</NavLink></li>
                 </ul>
             </nav>
         </header>
