@@ -7,4 +7,11 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

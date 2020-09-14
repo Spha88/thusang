@@ -1,0 +1,32 @@
+.Footer {
+    color: #fff;
+    background: #323232;
+    .FooterInner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5rem 1rem 1rem 1rem;
+        .Content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            .Logo {
+                h2 {
+                    margin: 0 0 5px;
+                }
+                h5 { margin: 0; }
+            }
+            .NavItems {
+                display: flex;
+                li { 
+                    margin-right: 1rem;
+                    .Active {
+                        color: #A30000;
+                    }
+                }
+            }
+        }
+        .Signature {
+            text-align: center;
+        }
+    }
+}

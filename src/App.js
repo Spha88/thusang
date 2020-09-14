@@ -7,6 +7,7 @@ import Mission from './components/Mission/Mission';
 import Help from './components/Help/Help';
 import HowToHelp from './components/HowToHelp/HowToHelp';
 import ContactUs from './components/ContactUs/ContactUs';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Help />
       <HowToHelp />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
