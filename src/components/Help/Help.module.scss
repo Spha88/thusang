@@ -1,31 +1,32 @@
-.About {
+.Help {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
-
     .Content {
         padding-right: 5rem;
         text-align: left;
         h2 {
-            span { color: #D01132}
             font-size: 36px;
-            font-weight: 700;
         }
         p {
-            line-height: 177%;
-            font-size: 18px;
-            font-weight: 400;
+            font-size: 27px;
+            line-height: 140%;
             span {
                 font-weight: bold;
             }
         }
+        a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #A30000;
+            color: #fff;
+            border-radius: 23px;
+            font-size: 24px;
+            font-weight: 500;
+        }
     }
-
     .Image {
         width: 550px;
-        image {
-            width: 100%;
-        }
+        height: auto;
     }
 }
