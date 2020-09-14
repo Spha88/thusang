@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Mission from './components/Mission/Mission';
 import Help from './components/Help/Help';
 import HowToHelp from './components/HowToHelp/HowToHelp';
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Mission />
       <Help />
       <HowToHelp />
+      <ContactUs />
     </div>
   );
 }

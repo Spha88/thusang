@@ -1,0 +1,43 @@
+.ContactForm {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    form {
+        width: 100%;
+        .FormGroup {
+            margin-bottom: .5rem;
+            label {
+                display: block;
+                padding-left: 2rem;
+                margin-bottom: .3rem;
+                font-size: 18px;
+            }
+            input, textarea {
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid #000;
+                outline: none;
+                resize: none;
+            }
+            input {
+                height: 50px;
+            }
+            .ErrorMsg {
+                height: 18px;
+                margin: 0;
+                font-size: 14px;
+                padding-left: 3rem;
+                padding-top: 5px;
+            }
+        }
+        .SendBtn {
+            height: 55px;
+            width: 195px;
+            background: #A30000;
+            color: #fff;
+            border-radius: 23px;
+            border: none;
+            font-size: 17px;
+        }
+    }
+}
