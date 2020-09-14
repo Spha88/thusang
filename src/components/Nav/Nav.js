@@ -13,8 +13,8 @@ const Nav = () => {
                 <ul className={classes.NavItems}>
                     <li><NavLink activeClassName={classes.Active} exact to="/">Home</NavLink></li>
                     <li><NavLink activeClassName={classes.Active} to="/about">About Us</NavLink></li>
-                    <li><NavLink activeClassName={classes.Active} to="/Donate">Donate</NavLink></li>
-                    <li><NavLink activeClassName={classes.Active} to="/Contact">Contact</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} to="/donate">Donate</NavLink></li>
+                    <li><NavLink activeClassName={classes.Active} to="/contact">Contact</NavLink></li>
                 </ul>
             </nav>
         </header>

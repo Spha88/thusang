@@ -1,0 +1,32 @@
+.Donate {
+    .Content {
+        padding-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .BankingDetails {
+            h2 {
+                font-size: 36px;
+                font-weight: bold;
+                span {
+                    color: #A30000;
+                }
+            }
+            ul {
+                font-size: 18px;
+                line-height: 180%;
+                span {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+            
+        }
+    }
+    .ContactForm {
+        padding-top: 3rem;
+        h2{
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
