@@ -39,5 +39,9 @@
             }
         }
     }  
+    @include media($bp-mobile) {
+        height: 200px;
+        background-position: top 0 right -200px;
+    }
     
 }
