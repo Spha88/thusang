@@ -11,9 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include media($bp-tablet) {
-        height: 60vh;
-    }
     .HeroContent {
         max-width: 1024px;
         padding: 4rem;
@@ -32,6 +29,20 @@
             cursor: pointer;
             font-size: 1.3em;
             font-weight: 100 !important;
+        }
+    }
+    @include media($bp-tablet) {
+        height: 60vh;
+    }
+    @include media($bp-mobile) {
+        height: 70vh;
+        .HeroContent {
+            h1 {
+                font-size: 2rem;
+            }
+            button {
+                font-size: 18px;
+            }
         }
     }
 }
