@@ -49,6 +49,12 @@
         }
         .Signature {
             text-align: center;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: rgb(129, 129, 129);
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }

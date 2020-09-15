@@ -19,7 +19,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={classes.Signature}>
-                    website by: S.Mehlomakulu
+                    <a href="http://www.netslate.co.za">website by: <br />S.Mehlomakulu</a>
                 </div>
             </div>
         </footer>
