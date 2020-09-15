@@ -1,3 +1,5 @@
+@import '../../../assets/styles/mixins.scss';
+
 .Donate {
     .Content {
         padding-top: 4rem;
@@ -21,12 +23,40 @@
             }
             
         }
+        @include media($bp-laptop) {
+            padding: 0;
+            .BankingDetails{
+                width: 60%;
+            }
+            .Image {
+                width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @include media($bp-tablet) {
+            display: block;
+            max-width: 500px;
+            margin: 0 auto;
+            .BankingDetails {
+                width: 100%;
+                padding-bottom: 1.5rem;
+                h2 {
+                    margin-top: 0;
+                }
+            }
+            .Image {
+                width: 100%;
+            }
+        }
     }
     .ContactForm {
-        padding-top: 3rem;
+        padding: 3rem 0;
         h2{
             text-align: center;
             margin-bottom: 0;
         }
     }
+
 }

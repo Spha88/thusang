@@ -9,7 +9,7 @@ import ContactForm from '../../ContactUs/ContactForm/ContactForm';
 const Donate = () => {
     return (
         <div className={classes.Donate}>
-            <Decal heading="Donate" color="red" />
+            <Decal heading="Donate" color="#A30000" />
             <Container>
                 <div className={classes.Content}>
                     <div className={classes.BankingDetails}>
