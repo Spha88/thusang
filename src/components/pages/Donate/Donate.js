@@ -21,6 +21,7 @@ const Donate = () => {
                             <li>Account type: Cheque</li>
                             <li>Branch code: <span>250655</span> </li>
                         </ul>
+                        <h3>"No amount is too little"</h3>
                     </div>
                     <div className={classes.Image}>
                         <img src={thank_you_img} alt="thank graphic" />

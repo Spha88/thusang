@@ -16,9 +16,9 @@ const About = () => {
 
                     <h2>Our <span>Mission</span></h2>
 
-                    <p>Our mission is to provide, safe havens and shelter for women and children, access to immediate professional counselling services and support.</p>
+                    <p>Our mission is to provide, safety shelter and access to immediate professional counselling services and support for women and children affected by gender-based violence.</p>
 
-                    <p>We do that, by empowering victims with life skills and recovery programs and providing necessary resources in underprivileged areas and families. We believe in smart fund allocation, and therefore we employ minimal staff.</p>
+                    <p>We do that, by empowering victims with life skills and recovery programs and providing necessary resources in underprivileged areas and families.</p>
 
                     <h2>Our <span>Beliefs</span></h2>
 
