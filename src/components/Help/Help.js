@@ -9,8 +9,8 @@ const Help = () => {
         <Container>
             <div className={classes.Help}>
                 <div className={classes.Content}>
-                    <h2>Raise Your helping Hand</h2>
-                    <p>Help us create a safer environment for <span>woman</span> and <span>children</span></p>
+                    <h2>Raise Your Helping Hand</h2>
+                    <p>Help us create a safer environment for <span>women</span> and <span>children</span></p>
                     <Link to="/donate">Donate Now</Link>
                 </div>
                 <div className={classes.Image}>

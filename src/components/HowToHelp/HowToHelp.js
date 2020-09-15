@@ -10,7 +10,11 @@ const HowToHelp = () => {
                 <div className={classes.Content}>
                     <div className={classes.Paragraph}>
                         <h2>Send a <span>donation</span></h2>
-                        <p>Giving online has never been more secure, convenient or hassle-free with our one-click donation. We also do accept standard cash and check donations at all of our locations</p>
+                        <p><strong>Giving online has never been more secure, convenient or hassle-free.</strong></p>
+                        <p>For your convenience, we are therefore working on creating a one-click donation button, which will be deployed soon.</p>
+                        <p>In the mean time, please use our bank account to send your donation.</p>
+                        <p>To prevent fraudulent actions, we do not accept or collect cash and cheque donations.
+                        We therefore advise you not to give any donation to anyone claiming to work for our organisation</p>
                     </div>
                     <div className={classes.Paragraph}>
                         <h2>Become a <span>member</span></h2>
