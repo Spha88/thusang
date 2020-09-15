@@ -1,14 +1,20 @@
+@import '../../assets/styles/mixins.scss';
+
 .NavContainer {
     border-bottom: 1px solid rgba(73, 73, 73, 0.459);
     width: 100vw;
-    overflow-x: hidden;
     .Nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         max-width: 1200px;
         margin: 0 auto;
         padding: 1rem;
+        @include media($bp-tablet) {
+            padding: 1rem 3rem;
+            align-items: center;
+        }
         .Logo {
             text-align: left;
             h2, h5 {
@@ -18,9 +24,19 @@
                 margin-bottom: 5px;
             }
         }
+        .NavIconContainer {
+            display: none;
+            cursor: pointer;
+            @include media($bp-tablet) {
+                display: block;
+            }
+        }
         .NavItems {
             list-style-type: none;
             margin: 0;
+            @include media($bp-tablet) {
+                display: none;
+            }
             li {
                 display: inline-block;
                 font-weight: 600;
@@ -36,6 +52,31 @@
                 }
             }
         }
+
+        .NavItemsMobile {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.884);
+            color: #fff;
+            position: absolute;
+            top: 85px;
+            min-width: 300px;
+            padding: 1rem;
+            padding-left: 3rem;
+            right: -100%;
+            li {
+                padding: 1rem 0;
+                .Active {
+                    color: #D01132;
+                }
+            }
+            @include media($bp-tablet) {
+                display: block;
+            }
+            &.open {
+                right: 0;
+            }
+        }
+        
     }
 }
 
