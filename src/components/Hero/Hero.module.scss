@@ -32,10 +32,11 @@
         }
     }
     @include media($bp-tablet) {
-        height: 60vh;
+        height: 100vh;
+        max-height: 700px;
     }
     @include media($bp-mobile) {
-        height: 70vh;
+        animation: bg_image 60s linear 2s infinite reverse;
         .HeroContent {
             h1 {
                 font-size: 2rem;
@@ -45,4 +46,13 @@
             }
         }
     }
+}
+
+
+@keyframes bg_image {
+    0% {background-position: center center;}
+    25% { background-position: right center;}
+    50% {background-position: center center;}
+    75% {background-position: left center;}
+    100% { background-position: center center;}
 }
