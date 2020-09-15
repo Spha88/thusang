@@ -2,10 +2,11 @@ import classes from './About.module.scss';
 import React from 'react';
 import Decal from '../../UI/Decal/Decal';
 import Container from '../../UI/Container/Container';
+import Footer from '../../Footer/Footer';
 
 const About = () => {
     return (
-        <div className={classes.AboutUs}>
+        <div className={`${classes.AboutUs} page`}>
             <Decal heading="About Us" />
 
             <Container>
@@ -25,6 +26,8 @@ const About = () => {
                     <p>We believe in a world where every mother and child are safe.</p>
                 </div>
             </Container>
+
+            <Footer />
         </div>
     )
 }

@@ -12,8 +12,7 @@ const Mission = () => {
                 </div>
                 <div className={classes.Content}>
                     <h2>Our <span>Mission</span></h2>
-                    <p>Our mission is to provide, safety shelter and access to immediate professional counselling services and support for women and children affected by gender-based violence.
-                    </p>
+                    <p>Our mission is to provide safe shelter and access to immediate professional counselling services and support for women and children affected by gender-based violence.</p>
                     <p>We do that, by empowering victims with life skills and recovery programs and providing necessary resources in underprivileged areas and families.</p>
                 </div>
             </div>

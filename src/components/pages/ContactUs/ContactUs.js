@@ -3,10 +3,11 @@ import classes from './ContactUs.module.scss';
 import Decal from '../../UI/Decal/Decal';
 import ContactForm from '../../ContactUs/ContactForm/ContactForm';
 import Container from '../../UI/Container/Container';
+import Footer from '../../Footer/Footer';
 
 const ContactUs = () => {
     return (
-        <div className={classes.Contact}>
+        <div className={`${classes.Contact} page`}>
             <Decal heading="Contact us" />
             <Container>
                 <div className={classes.ContactForm} >
@@ -14,6 +15,7 @@ const ContactUs = () => {
                     <ContactForm />
                 </div>
             </Container>
+            <Footer />
         </div>
     )
 }

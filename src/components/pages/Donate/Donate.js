@@ -5,10 +5,11 @@ import Decal from '../../UI/Decal/Decal';
 import Container from '../../UI/Container/Container';
 import thank_you_img from '../../../assets/images/thank_you.png';
 import ContactForm from '../../ContactUs/ContactForm/ContactForm';
+import Footer from '../../Footer/Footer';
 
 const Donate = () => {
     return (
-        <div className={classes.Donate}>
+        <div className={`${classes.Donate} page`}>
             <Decal heading="Donate" color="#A30000" />
             <Container>
                 <div className={classes.Content}>
@@ -32,6 +33,8 @@ const Donate = () => {
                     <ContactForm />
                 </div>
             </Container>
+
+            <Footer />
         </div>
     )
 }
