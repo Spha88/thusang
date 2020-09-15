@@ -9,7 +9,7 @@ const Help = () => {
             <div className={classes.Help}>
                 <div className={classes.Content}>
                     <h2>Raise Your helping Hand</h2>
-                    <p>Help use create a safer environment for <span>woman</span> and <span>children</span></p>
+                    <p>Help us create a safer environment for <span>woman</span> and <span>children</span></p>
                     <a href="!#">Donate Now</a>
                 </div>
                 <div className={classes.Image}>
