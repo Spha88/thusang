@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Nav.module.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import burger_icon from '../../assets/images/burger_icon.png';
 
 const Nav = () => {
@@ -9,8 +9,8 @@ const Nav = () => {
         <header className={classes.NavContainer}>
             <nav className={classes.Nav}>
                 <div className={classes.Logo}>
-                    <h2>Thusang Social Center</h2>
-                    <h5>In the service of caring</h5>
+                    <h2><Link to="/">Thusang Social Center</Link></h2>
+                    <h5><Link to="/">In the service of caring</Link></h5>
                 </div>
                 <div className={classes.NavIconContainer} onClick={() => setOpenNav(!openNav)}>
                     <img src={burger_icon} alt="nav icon" />
