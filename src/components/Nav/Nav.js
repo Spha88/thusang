@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classes from './Nav.module.scss';
 import { NavLink, Link } from 'react-router-dom';
-import burger_icon from '../../assets/images/burger_icon.png';
+import burger_icon from '../../assets/images/burger_icon.svg';
 
 const Nav = () => {
     const [openNav, setOpenNav] = useState(false);
