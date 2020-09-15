@@ -25,7 +25,7 @@ const ContactForm = () => {
                     <textarea name="message" cols="30" rows="10" ></textarea>
                     <p className={classes.ErrorMsg}></p>
                 </div>
-                <input className={classes.SendBtn} type="submit" value="Send" />
+                <button className={classes.SendBtn}>Send</button>
             </form>
         </div>
     )

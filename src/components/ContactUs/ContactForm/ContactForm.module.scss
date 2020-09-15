@@ -1,6 +1,6 @@
 @import '../../../assets/styles/mixins.scss';
 .ContactForm {
-    max-width: 680px;
+    max-width: 550px;
     width: 100%;
     margin: 0 auto;
     @include media($bp-tablet) {
@@ -22,9 +22,9 @@
                 border: 1px solid #000;
                 outline: none;
                 resize: none;
-            }
-            input {
-                height: 50px;
+                padding: 10px 10px 10px 30px;
+                font-size: 18px;
+                font-family: inherit;
             }
             .ErrorMsg {
                 height: 18px;
@@ -35,13 +35,14 @@
             }
         }
         .SendBtn {
-            height: 55px;
+            height: 50px;
             width: 195px;
             background: #A30000;
             color: #fff;
-            border-radius: 23px;
+            border-radius: 10px;
             border: none;
-            font-size: 17px;
+            font-size: 20px;
+            cursor: pointer;
         }
     }
 }
