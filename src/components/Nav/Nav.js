@@ -21,7 +21,11 @@ const Nav = () => {
                     <li><NavLink activeClassName={classes.Active} to="/donate">Donate</NavLink></li>
                     <li><NavLink activeClassName={classes.Active} to="/contact-us">Contact</NavLink></li>
                 </ul>
-                <ul className={`${classes.NavItemsMobile} ${openNav && classes.open}`}>
+                <ul className={`${classes.NavItemsMobile} ${openNav && classes.open}`} onClick={() => setOpenNav(!openNav)}>
+                    <li className={classes.NavLogo}>
+                        <h2>Thusang Social Center</h2>
+                        <h5>In the service of caring</h5>
+                    </li>
                     <li><NavLink activeClassName={classes.Active} exact to="/">Home</NavLink></li>
                     <li><NavLink activeClassName={classes.Active} to="/about">About Us</NavLink></li>
                     <li><NavLink activeClassName={classes.Active} to="/donate">Donate</NavLink></li>

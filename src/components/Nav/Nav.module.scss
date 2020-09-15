@@ -55,22 +55,33 @@
 
         .NavItemsMobile {
             display: none;
-            background-color: rgba(0, 0, 0, 0.884);
+            background-color: rgba(0, 0, 0, 0.938);
             color: #fff;
-            position: absolute;
-            top: 85px;
-            min-width: 300px;
+            position: fixed;
+            top: 0;
+            min-width: 400px;
+            height: 100vh;
             padding: 1rem;
             padding-left: 3rem;
             right: -100%;
             li {
                 padding: 1rem 0;
+                font-size: 20px;
                 .Active {
                     color: #D01132;
                 }
             }
+            .NavLogo {
+                h2, h5 {
+                    margin: 10px;
+                }
+            }
             @include media($bp-tablet) {
                 display: block;
+            }
+            @include media($bp-mobile) {
+                min-width: 100vw;
+                width: 100vw;
             }
             &.open {
                 right: 0;
