@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import validator from 'validator';
+import axios from 'axios';
 
 import classes from './ContactForm.module.scss';
 
@@ -10,13 +11,40 @@ import Modal from '../../UI/Modal/Modal';
 const ContactForm = () => {
     const [openModal, setOpenModal] = useState(false);
     const { register, handleSubmit, errors, trigger } = useForm();
+
     const close = () => setOpenModal(false);
+
     const onSubmit = data => {
         console.log(data);
+        axios({
+            method: 'post',
+            url: 'form_handler.php',
+            headers: { 'Content-type': 'application/json' },
+            data: {
+                name: data.fullname,
+                number: data.number,
+                email: data.email,
+                subject: 'Email enquiry from the website',
+                message: data.message
+            }
+        })
+            .then(res => {
+                document.getElementById('contact-form').reset();
+                console.log(res);
+
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
         setOpenModal(true);
     };
+
     return (
-        <form className={classes.Form} onSubmit={handleSubmit(onSubmit)}>
+        <form
+            id="contact-form"
+            className={classes.Form}
+            onSubmit={handleSubmit(onSubmit)}>
 
             {/** Name */}
             <div className={classes.FormGroup}>
