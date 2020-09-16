@@ -5,8 +5,8 @@ const Modal = ({ open, close }) => {
     return (
         <div className={`${classes.Modal} ${!open && classes.close}`} onClick={close} >
             <div>
-                <h2>Your info was validated</h2>
-                <p>Thank you for shopping with us</p>
+                <h2>Your message was sent</h2>
+                <p>Thank you.</p>
             </div>
         </div>
     )
