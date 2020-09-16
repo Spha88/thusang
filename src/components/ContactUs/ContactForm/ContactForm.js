@@ -67,7 +67,7 @@ const ContactForm = () => {
 
             {/** Message */}
             <div className={classes.FormGroup}>
-                <label htmlFor="message">Enter your message</label>
+                <label htmlFor="message" className={classes.MsgLabel}>Enter your message</label>
                 <div className={`${classes.InputContainer} ${errors.message && classes.InputContainerError}`}>
                     <i className={`material-icons ${classes.inTextArea}`}>message</i>
                     <textarea name="message" cols="30" rows="5"

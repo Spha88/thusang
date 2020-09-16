@@ -17,6 +17,11 @@
             width: 100%;
             margin: 0 0 6px 5px;
             font-size: 0.9em;
+            padding-left: 3rem;
+            display: none;
+            &.MsgLabel {
+                display: block;
+            }
         }
         .InputContainer {
             position: relative;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { CSSTransition, TransitionGroup, } from 'react-transition-group';
 
-import './App.css';
+import './App.scss';
 import Nav from './components/Nav/Nav';
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
@@ -30,7 +30,6 @@ function App() {
             </Switch>
           </CSSTransition>
         </TransitionGroup>
-
       )} />
     </div>
   );
