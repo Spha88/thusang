@@ -39,89 +39,91 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 	$message = test_input( $_POST[ 'message' ] );
 
     //Validate the name of the client
-    if ( !empty($name) ) {
+    // if ( !empty($name) ) {
 
-    	if(strlen($name) > 40 ){
-    		$OK = false;
-    	 } else {
+    // 	if(strlen($name) > 40 ){
+    // 		$OK = false;
+    // 	 } else {
 
-    		if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
-                $OK = false;
-              } else {
-                $OK = true;
-            }
-    	 }
-      } else {
-      $OK = false;
+    // 		if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+    //             $OK = false;
+    //           } else {
+    //             $OK = true;
+    //         }
+    // 	 }
+    //   } else {
+    //   $OK = false;
       
-    }
+    // }
 
     //Validate contact number 
-    if( $OK == true ) {
-      if(!empty($number)){
-        if(validate_phone_number($number)) {
-          $OK = true;
-        } else {
-          $OK = false;
-        }
-      } else {
-        $number = 'No contact number';
-      }
-    }
+    // if( $OK == true ) {
+    //   if(!empty($number)){
+    //     if(validate_phone_number($number)) {
+    //       $OK = true;
+    //     } else {
+    //       $OK = false;
+    //     }
+    //   } else {
+    //     $number = 'No contact number';
+    //   }
+    // }
 
 
     //Validate the email
-    if ($OK == true) {
+    // if ($OK == true) {
 
-        if(!empty($email)){
+    //     if(!empty($email)){
 
-	      	if(strlen($email) > 40 ) {
-               $OK = false;
-	      	  } else {
+	  //     	if(strlen($email) > 40 ) {
+    //            $OK = false;
+	  //     	  } else {
                
-                    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { 
-	                    $OK = false;
-	                  } else {
-                        $OK = true;   
-	                }
-	      	}
+    //                 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { 
+	  //                   $OK = false;
+	  //                 } else {
+    //                     $OK = true;   
+	  //               }
+	  //     	}
 
-	      } else {
-	      	$OK = false;
-	    }
-    }
+	  //     } else {
+	  //     	$OK = false;
+	  //   }
+    // }
 
     // Validate the subject
-    if( $OK == true) {
-      if(!empty($subject)){
-        if(strlen($subject) < 41) {
-          $OK = true;
-        } else {
-          $OK = false;
-        }
-      } else {
-        $OK = false;
-      }
-    }
+    // if( $OK == true) {
+    //   if(!empty($subject)){
+    //     if(strlen($subject) < 41) {
+    //       $OK = true;
+    //     } else {
+    //       $OK = false;
+    //     }
+    //   } else {
+    //     $OK = false;
+    //   }
+    // }
 
        //Validate the message
-    if ($OK == true) {
+    // if ($OK == true) {
     	
-    	if(!empty($message)){
+    // 	if(!empty($message)){
            
-            if(strlen($message) > 200){
+    //         if(strlen($message) > 200){
               
-                $OK = false;
+    //             $OK = false;
 
-              } else {
+    //           } else {
 
-                 $OK = true;
-            }
+    //              $OK = true;
+    //         }
 
-          } else {
-            $OK = false;
-        }
-    }
+    //       } else {
+    //         $OK = false;
+    //     }
+    // }
+
+    $OK = true;
 
     //sending the email
         if ($OK == true) {
