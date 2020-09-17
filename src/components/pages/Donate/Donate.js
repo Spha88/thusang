@@ -16,8 +16,8 @@ const Donate = () => {
                         <h2><span>Donations</span> are welcome at:</h2>
                         <ul>
                             <li><span>Bank</span>: First National Bank</li>
-                            <li><span>Account Name</span>: Thusang Social Center</li>
-                            <li><span>Account No</span>: <span className={classes.Numbers}>6285 7532 991</span></li>
+                            <li><span>Account name</span>: Thusang Social Center</li>
+                            <li><span>Account number</span>: <span className={classes.Numbers}>6285 7532 991</span></li>
                             <li><span>Account type</span>: Cheque</li>
                             <li><span>Branch code</span>: <span className={classes.Numbers}>250655</span> </li>
                         </ul>
