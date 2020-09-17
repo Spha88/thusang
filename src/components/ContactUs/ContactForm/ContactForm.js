@@ -10,19 +10,20 @@ import Modal from '../../UI/Modal/Modal';
 
 const ContactForm = () => {
     const [openModal, setOpenModal] = useState(false);
+    const [responseMsg, setResponseMsg] = useState('');
     const { register, handleSubmit, errors, trigger } = useForm();
 
     const close = () => setOpenModal(false);
 
     const onSubmit = data => {
-        console.log(data);
+        // console.log(data);
         axios({
             method: 'post',
             url: 'form_handler.php',
             headers: { 'Content-type': 'application/json' },
             data: {
-                name: data.fullname,
-                number: data.number,
+                name: data.fullName,
+                number: data.phone,
                 email: data.email,
                 subject: 'Email enquiry from the website',
                 message: data.message
@@ -30,14 +31,17 @@ const ContactForm = () => {
         })
             .then(res => {
                 document.getElementById('contact-form').reset();
-                console.log(res);
+                setOpenModal(true);
+                setResponseMsg(res.data.message);
+                setTimeout(() => setOpenModal(false), 3000)
+                // console.log(res);
 
             })
             .catch(error => {
-                console.log(error);
+                setOpenModal(true);
+                setResponseMsg("Error: Message was not sent");
+                setTimeout(() => setOpenModal(false), 3000)
             })
-
-        setOpenModal(true);
     };
 
     return (
@@ -111,7 +115,7 @@ const ContactForm = () => {
             <footer>
                 <button>Send</button>
             </footer>
-            <Modal open={openModal} close={close} />
+            <Modal open={openModal} message={responseMsg} close={close} />
         </form >
     )
 }
