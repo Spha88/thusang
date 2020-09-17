@@ -4,7 +4,6 @@ import classes from './Donate.module.scss';
 import Decal from '../../UI/Decal/Decal';
 import Container from '../../UI/Container/Container';
 import thank_you_img from '../../../assets/images/thank_you.png';
-import ContactForm from '../../ContactUs/ContactForm/ContactForm';
 import Footer from '../../Footer/Footer';
 
 const Donate = () => {
@@ -16,11 +15,11 @@ const Donate = () => {
                     <div className={classes.BankingDetails}>
                         <h2><span>Donations</span> are welcome at:</h2>
                         <ul>
-                            <li>Bank: First National Bank</li>
-                            <li>Account Name: Thusang Social Center</li>
-                            <li>Account No: <span>6285 7532 991</span></li>
-                            <li>Account type: Cheque</li>
-                            <li>Branch code: <span>250655</span> </li>
+                            <li><span>Bank</span>: First National Bank</li>
+                            <li><span>Account Name</span>: Thusang Social Center</li>
+                            <li><span>Account No</span>: <span className={classes.Numbers}>6285 7532 991</span></li>
+                            <li><span>Account type</span>: Cheque</li>
+                            <li><span>Branch code</span>: <span className={classes.Numbers}>250655</span> </li>
                         </ul>
                         <h3>"No amount is too little"</h3>
                     </div>
@@ -28,12 +27,7 @@ const Donate = () => {
                         <img src={thank_you_img} alt="thank graphic" />
                     </div>
                 </div>
-                <div className={classes.ContactForm}>
-                    <h2>Contact us</h2>
-                    <ContactForm />
-                </div>
             </Container>
-
             <Footer />
         </div>
     )
