@@ -19,6 +19,7 @@
             max-width: 500px;
             width: 100%;
             text-align: left;
+            padding: 1rem;
             h2 {
                 font-weight: bold;
                 font-size: 18px;
@@ -30,6 +31,9 @@
             p {
                 font-size: 18px;
                 line-height: 180%;
+            }
+            @include media($bp-tablet) {
+                padding: 0;
             }
         }
     }
