@@ -9,7 +9,7 @@ const NotFound = () => {
             <div>
                 <img src={not_found} alt="page not found" />
                 <h2>Oops! Page not found</h2>
-                <Link to="/" >Back</Link>
+                <Link to="/" >Home <i className="material-icons">home</i></Link>
             </div>
         </div>
     )

@@ -17,13 +17,22 @@
         a {
             padding: 1rem 4rem;
             border-radius: 10px;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            margin: 0 auto;
             margin-top: 2rem;
             font-size: 20px;
-            font-weight: bold;
+            font-weight: normal;
             transition: all 300ms ease-in-out;
             background:$theme-red;
             color: #fff;
+            i {
+                display: inline-block;
+                margin-left: 5px;
+
+            }
         }
     }
 }

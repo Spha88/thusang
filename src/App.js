@@ -25,9 +25,9 @@ function App() {
           >
             <Switch location={location}>
               <Route path="/" exact component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/donate" component={Donate} />
-              <Route path="/contact-us" component={ContactUs} />
+              <Route path="/about" exact component={About} />
+              <Route path="/donate" exact component={Donate} />
+              <Route path="/contact-us" exact component={ContactUs} />
               <Route path="" component={NotFound} />
             </Switch>
           </CSSTransition>
