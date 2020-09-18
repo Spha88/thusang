@@ -8,6 +8,7 @@ import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import Donate from './components/pages/Donate/Donate';
 import ContactUs from './components/pages/ContactUs/ContactUs';
+import NotFound from './components/pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/about" component={About} />
               <Route path="/donate" component={Donate} />
               <Route path="/contact-us" component={ContactUs} />
+              <Route path="" component={NotFound} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
