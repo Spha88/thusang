@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Container from '../UI/Container/Container';
 import classes from './Mission.module.scss';
