@@ -3,6 +3,7 @@ import classes from './Footer.module.scss';
 import { NavLink, Link } from 'react-router-dom';
 
 const Footer = () => {
+    const date = new Date();
     return (
         <footer className={classes.Footer}>
             <div className={classes.FooterInner}>
@@ -18,8 +19,11 @@ const Footer = () => {
                         <li><NavLink to="/contact-us" activeClassName={classes.Active}>Contact</NavLink></li>
                     </ul>
                 </div>
+                <div className={classes.CopyRight}>
+                    Thusang Social Center &#169; {date.getFullYear()}
+                </div>
                 <div className={classes.Signature}>
-                    <a href="http://www.netslate.co.za">website by: <br />S.Mehlomakulu</a>
+                    <a href="http://www.netslate.co.za">website by: <br />NetSlate</a>
                 </div>
             </div>
         </footer>

@@ -9,7 +9,7 @@ const Mission = () => {
         <Container>
             <div className={classes.Mission}>
                 <div className={classes.Image}>
-                    <Zoom delay={1000} slow fraction={.5}>
+                    <Zoom delay={1000} slow fraction={.2}>
                         <img src={mission_img} alt="our mission" />
                     </Zoom>
                 </div>

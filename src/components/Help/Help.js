@@ -3,7 +3,6 @@ import Zoom from 'react-reveal/Zoom';
 import Container from '../UI/Container/Container';
 import classes from './Help.module.scss';
 import helping_img from '../../assets/images/helping_hand.png';
-import { Link } from 'react-router-dom';
 import LinkButton from '../UI/LinkButton/LinkButton';
 
 const Help = () => {
