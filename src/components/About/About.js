@@ -1,5 +1,4 @@
 import React from 'react';
-import aboutImage from '../../assets/images/about-image.png';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import classes from './About.module.scss';

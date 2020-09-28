@@ -19,17 +19,6 @@
         h1 {
             font-size: 3rem;
         }
-        button {
-            background: #A30000;
-            border-radius: 23px;
-            border: none;
-            padding: 1rem 3rem;
-            outline: none;
-            color: #fff;
-            cursor: pointer;
-            font-size: 1.3em;
-            font-weight: 100 !important;
-        }
     }
     @include media($bp-tablet) {
         height: 100vh;
