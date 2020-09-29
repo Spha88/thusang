@@ -23,7 +23,7 @@ const Footer = () => {
                     Thusang Social Center &#169; {date.getFullYear()}
                 </div>
                 <div className={classes.Signature}>
-                    <a href="http://www.netslate.co.za">website by: <br />NetSlate</a>
+                    <a href="http://www.netslate.co.za">website by: <br />Spha</a>
                 </div>
             </div>
         </footer>
