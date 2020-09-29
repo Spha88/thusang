@@ -8,7 +8,7 @@ import CssImageSlide from '../UI/CssImageSlide/CssImageSlide';
 const About = () => {
     return (
         <Container>
-            <section className={classes.About}>
+            <section className={classes.About} id="about-section">
                 <div className={classes.Content}>
                     <Fade delay={500}><h2><span>About</span> Us</h2></Fade>
                     <Zoom delay={1000}>

@@ -3,7 +3,9 @@ import classes from './Footer.module.scss';
 import { NavLink, Link } from 'react-router-dom';
 
 const Footer = () => {
+
     const date = new Date();
+
     return (
         <footer className={classes.Footer}>
             <div className={classes.FooterInner}>
